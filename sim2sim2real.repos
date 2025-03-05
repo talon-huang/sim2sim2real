@@ -1,0 +1,16 @@
+repositories:
+  src/tita_bringup:
+    type: git
+    url: https://github.com/talon-huang/tita_bringup.git
+    version: main
+
+  src/tita_command:
+    type: git
+    url: https://github.com/talon-huang/tita_command.git
+    version: main
+
+  src/tita_locomotion:
+    type: git
+    url: https://github.com/talon-huang/tita_locomotion.git
+    version: main
+
