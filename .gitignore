@@ -1,0 +1,7 @@
+# 忽略所有文件
+/install
+/log
+/build
+
+# 排除 src 文件夹
+!src/
