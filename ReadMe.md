@@ -1,11 +1,18 @@
 持续更新~~~~~~~~
 欢迎大家一起加入学习
 
-按照以下命令行拉取编译代码
-修改这个文件src/tita_locomotion/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp
+
+编译之前先修改这个文件，src/tita_locomotion/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp
 ![alt text](/pictures/image.png)
 把位置修改为把推理出来的model_gn.engine路径
 
+按照以下命令行拉取编译代码  
+
+若启动了conda环境先把环境关闭
+
+```bash 
+conda deactivate
+```
 
 仿真部分
 ```bash 
