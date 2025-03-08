@@ -1,18 +1,21 @@
-持续更新~~~~~~~~
-欢迎大家一起加入学习
+持续更新中~~~  
+有问题欢迎在Issues中反馈，欢迎大家一起加入学习。
 
-
-编译之前先修改这个文件，src/tita_locomotion/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp
-![alt text](/pictures/image.png)
-把位置修改为把推理出来的model_gn.engine路径
-
-按照以下命令行拉取编译代码  
 
 若启动了conda环境先把环境关闭
 
 ```bash 
 conda deactivate
 ```
+
+安装环境
+1. 安装ros2_control   
+https://github.com/DDTRobot/TITA_ROS2_Control_Sim.git
+
+
+
+
+按照以下命令行拉取编译代码  
 
 仿真部分
 ```bash 
@@ -23,8 +26,12 @@ cd sim2sim2real
 
 #拉去其余代码
 vcs import < sim2sim2real.repos
+```
+编译之前先修改这个文件，src/tita_locomotion/tita_controllers/tita_controller/src/fsm/FSMState_RL.cpp
+![alt text](/pictures/image.png)
+把位置修改为把推理出来的model_gn.engine路径
 
-
+```bash 
 #编译
 source /opt/ros/humble/setup.bash && colcon build --packages-up-to locomotion_bringup gazebo_bridge webots_bridge robot_inertia_calculator template_ros2_controller tita_controller joy_controller keyboard_controller
 
